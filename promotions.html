@@ -1,0 +1,187 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Restaurant — Promotions</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">
+        <img src="Logo.jpg" alt="Logo" height="100">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link active" href="promotions.html">Promotions</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html" onclick="openMap()">Find Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grain"></div>
+  <div class="hero-deco"></div>
+  <span class="hero-label">Haven Restaurant · Promotions & Events</span>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Deals, events & more</p>
+    <h1 class="hero-title">Promotions<br><em>&amp; Events</em></h1>
+    <p class="hero-desc">From weekend specials to live entertainment, there's always something exciting happening at Haven. Check back often for the latest offers.</p>
+  </div>
+  <div class="hero-line"></div>
+</section>
+
+<!-- PROMOTIONS GRID -->
+<div class="pillars">
+  <div class="page-wrap" style="padding:0 8vw;">
+
+    <div class="divider reveal">
+      <div class="divider-line"></div>
+      <div class="divider-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+      </div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="page-wrap mb-5 reveal">
+      <p class="section-label">What's On</p>
+      <h2 class="section-title">Current offers<br><em>&amp; upcoming events</em></h2>
+    </div>
+
+    <div class="pillars-grid">
+
+      <div class="pillar reveal">
+        <div class="pillar-num">01</div>
+        <h3 class="pillar-title">Weekend Special</h3>
+        <p class="pillar-body">Get 20% off on all meals every weekend. Gather your friends and family and enjoy Haven's finest dishes at a great price.</p>
+        <span class="promo-tag">Every Weekend</span>
+      </div>
+
+      <div class="pillar reveal reveal-delay-1">
+        <div class="pillar-num">02</div>
+        <h3 class="pillar-title">Live Music Night</h3>
+        <p class="pillar-body">Join us every Friday evening for live entertainment. Great music, great food, great company — the perfect end to your week.</p>
+        <span class="promo-tag">Every Friday</span>
+      </div>
+
+      <div class="pillar reveal reveal-delay-2">
+        <div class="pillar-num">03</div>
+        <h3 class="pillar-title">Stay Updated</h3>
+        <p class="pillar-body">Subscribe to our newsletter to be the first to know about new promotions, seasonal menus, and special events at Haven.</p>
+        <span class="promo-tag">Subscribe Below</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- SUBSCRIBE BANNER -->
+<div class="page-wrap">
+  <section class="booking-section reveal">
+    <div class="booking-text">
+      <p class="section-label">Stay in the loop</p>
+      <h2 class="section-title">Never miss<br><em>a deal</em></h2>
+      <p class="section-body">Subscribe to get updates on our latest promotions, new menu items, and upcoming events delivered straight to your inbox.</p>
+    </div>
+    <div class="booking-btn-wrap">
+      <div class="d-flex flex-column gap-2" style="min-width:280px;">
+        <input type="email" class="booking-input" placeholder="Enter your email">
+        <button class="hero-btn" onclick="subscribeUser()">Subscribe Now</button>
+        <p class="small" style="color:#7a6355;">By subscribing, you agree to our Privacy Policy.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-start gy-4">
+
+      <div class="col-md-3 d-flex align-items-center">
+        <img src="Logo.jpg" alt="Logo" height="100">
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">Contact Info</h6>
+        <p class="mb-1">+267 71975697</p>
+        <p class="mb-1">Havenrestauranttoro@gmail.com</p>
+        <p class="mb-0">Toro Junction Mall, Francistown</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <h6 class="text-uppercase fw-bold mb-3">Opening Hours</h6>
+        <p class="mb-1">Sun–Thurs: 07:00–22:30</p>
+        <p class="mb-0">Fri–Sat: 07:00–00:00</p>
+      </div>
+
+      <div class="col-md-1">
+        <h6 class="text-uppercase fw-bold mb-3">Links</h6>
+        <p class="mb-1"><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+        <p class="mb-1"><a href="menu.html" class="text-white text-decoration-none">Menu</a></p>
+        <p class="mb-0"><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">Subscribe</h6>
+        <p class="small">Get updates on promotions and new menu items.</p>
+        <div class="d-flex flex-column gap-2">
+          <input type="email" id="email" class="form-control form-control-sm" placeholder="Enter your email">
+          <button class="btn btn-light btn-sm" onclick="subscribeUser()">Subscribe</button>
+          <p class="small text-muted mb-0">By subscribing, you agree to our Privacy Policy.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4 border-top pt-3">
+      <small>
+        © 2026 Haven Restaurant |
+        <a href="#" class="text-white text-decoration-none">Privacy Policy</a> |
+        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+      </small>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Restaurant — Gallery</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">
+        <img src="Logo.jpg" alt="Logo" height="100">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="promotions.html">Promotions</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html" onclick="openMap()">Find Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grain"></div>
+  <div class="hero-deco"></div>
+  <span class="hero-label">Haven Restaurant · Gallery</span>
+  <div class="hero-content">
+    <p class="hero-eyebrow">A feast for the eyes</p>
+    <h1 class="hero-title">Our<br><em>Gallery</em></h1>
+    <p class="hero-desc">A glimpse into the world of Haven — from handcrafted dishes and refreshing beverages to the moments that make every visit unforgettable.</p>
+  </div>
+  <div class="hero-line"></div>
+</section>
+
+<!-- GALLERY SECTIONS -->
+<div class="page-wrap">
+
+  <!-- BEVERAGES -->
+  <section class="gallery-section reveal">
+    <div class="gallery-section-header">
+      <div>
+        <p class="section-label">Drinks</p>
+        <h2 class="section-title">Beverages</h2>
+      </div>
+      <div class="gallery-arrows">
+        <button class="gallery-arrow-btn" onclick="scrollGallery('bevRow', -1)">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="gallery-arrow-btn" onclick="scrollGallery('bevRow', 1)">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div id="bevRow" class="gallery-row">
+      <div class="gallery-item"><img src="B1.jpg" alt="Beverage 1"></div>
+      <div class="gallery-item"><img src="B2.jpg" alt="Beverage 2"></div>
+      <div class="gallery-item"><img src="B3.jpg" alt="Beverage 3"></div>
+      <div class="gallery-item"><img src="B4.jpg" alt="Beverage 4"></div>
+      <div class="gallery-item"><img src="B5.jpg" alt="Beverage 5"></div>
+      <div class="gallery-item"><img src="image5.jpg" alt="Beverage 6"></div>
+      <div class="gallery-item"><img src="B7.jpg" alt="Beverage 7"></div>
+      <div class="gallery-item"><img src="B8.jpg" alt="Beverage 8"></div>
+      <div class="gallery-item"><img src="B9.jpg" alt="Beverage 9"></div>
+      <div class="gallery-item"><img src="B10.jpg" alt="Beverage 10"></div>
+    </div>
+  </section>
+
+  <!-- FOOD -->
+  <section class="gallery-section reveal">
+    <div class="gallery-section-header">
+      <div>
+        <p class="section-label">Kitchen</p>
+        <h2 class="section-title">Food</h2>
+      </div>
+      <div class="gallery-arrows">
+        <button class="gallery-arrow-btn" onclick="scrollGallery('foodRow', -1)">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="gallery-arrow-btn" onclick="scrollGallery('foodRow', 1)">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div id="foodRow" class="gallery-row">
+      <div class="gallery-item"><img src="M1.jpg" alt="Food 1"></div>
+      <div class="gallery-item"><img src="M2.jpg" alt="Food 2"></div>
+      <div class="gallery-item"><img src="M3.jpg" alt="Food 3"></div>
+      <div class="gallery-item"><img src="M4.jpg" alt="Food 4"></div>
+      <div class="gallery-item"><img src="M5.jpg" alt="Food 5"></div>
+      <div class="gallery-item"><img src="M6.jpg" alt="Food 6"></div>
+      <div class="gallery-item"><img src="M7.jpg" alt="Food 7"></div>
+      <div class="gallery-item"><img src="M8.jpg" alt="Food 8"></div>
+      <div class="gallery-item"><img src="image2.jpg" alt="Food 9"></div>
+      <div class="gallery-item"><img src="image8.jpg" alt="Food 10"></div>
+    </div>
+  </section>
+
+  <!-- DESSERTS -->
+  <section class="gallery-section reveal">
+    <div class="gallery-section-header">
+      <div>
+        <p class="section-label">Sweet Endings</p>
+        <h2 class="section-title">Desserts</h2>
+      </div>
+      <div class="gallery-arrows">
+        <button class="gallery-arrow-btn" onclick="scrollGallery('dessRow', -1)">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="gallery-arrow-btn" onclick="scrollGallery('dessRow', 1)">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div id="dessRow" class="gallery-row">
+      <div class="gallery-item"><img src="D1.jpg" alt="Dessert 1"></div>
+      <div class="gallery-item"><img src="D2.jpg" alt="Dessert 2"></div>
+      <div class="gallery-item"><img src="D3.jpg" alt="Dessert 3"></div>
+      <div class="gallery-item"><img src="D4.jpg" alt="Dessert 4"></div>
+      <div class="gallery-item"><img src="D5.jpg" alt="Dessert 5"></div>
+      <div class="gallery-item"><img src="D6.jpg" alt="Dessert 6"></div>
+      <div class="gallery-item"><img src="D7.jpg" alt="Dessert 7"></div>
+      <div class="gallery-item"><img src="D8.jpg" alt="Dessert 8"></div>
+      <div class="gallery-item"><img src="D9.jpg" alt="Dessert 9"></div>
+      <div class="gallery-item"><img src="D10.jpg" alt="Dessert 10"></div>
+    </div>
+  </section>
+
+</div>
+
+<!-- LIGHTBOX OVERLAY -->
+<div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-nav left" onclick="event.stopPropagation(); changeImage(-1)">
+    <i class="bi bi-arrow-left"></i>
+  </button>
+  <img id="lightbox-img" src="" alt="Gallery Image">
+  <button class="lightbox-nav right" onclick="event.stopPropagation(); changeImage(1)">
+    <i class="bi bi-arrow-right"></i>
+  </button>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-start gy-4">
+
+      <div class="col-md-3 d-flex align-items-center">
+        <img src="Logo.jpg" alt="Logo" height="100">
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">Contact Info</h6>
+        <p class="mb-1">+267 71975697</p>
+        <p class="mb-1">Havenrestauranttoro@gmail.com</p>
+        <p class="mb-0">Toro Junction Mall, Francistown</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <h6 class="text-uppercase fw-bold mb-3">Opening Hours</h6>
+        <p class="mb-1">Sun–Thurs: 07:00–22:30</p>
+        <p class="mb-0">Fri–Sat: 07:00–00:00</p>
+      </div>
+
+      <div class="col-md-1">
+        <h6 class="text-uppercase fw-bold mb-3">Links</h6>
+        <p class="mb-1"><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+        <p class="mb-1"><a href="menu.html" class="text-white text-decoration-none">Menu</a></p>
+        <p class="mb-0"><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="text-uppercase fw-bold mb-3">Subscribe</h6>
+        <p class="small">Get updates on promotions and new menu items.</p>
+        <div class="d-flex flex-column gap-2">
+          <input type="email" id="email" class="form-control form-control-sm" placeholder="Enter your email">
+          <button class="btn btn-light btn-sm" onclick="subscribeUser()">Subscribe</button>
+          <p class="small text-muted mb-0">By subscribing, you agree to our Privacy Policy.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4 border-top pt-3">
+      <small>
+        © 2026 Haven Restaurant |
+        <a href="#" class="text-white text-decoration-none">Privacy Policy</a> |
+        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+      </small>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+  // Scroll gallery rows
+  function scrollGallery(rowId, direction) {
+    const row = document.getElementById(rowId);
+    row.scrollBy({ left: direction * 320, behavior: 'smooth' });
+  }
+
+  // Lightbox
+  let allImages = [];
+  let currentIndex = 0;
+
+  document.querySelectorAll('.gallery-item img').forEach((img, index) => {
+    allImages.push(img.src);
+    img.addEventListener('click', () => {
+      currentIndex = index;
+      openLightbox(img.src);
+    });
+  });
+
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function changeImage(direction) {
+    currentIndex = (currentIndex + direction + allImages.length) % allImages.length;
+    document.getElementById('lightbox-img').src = allImages[currentIndex];
+  }
+
+  // Close lightbox with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') changeImage(1);
+    if (e.key === 'ArrowLeft') changeImage(-1);
+  });
+</script>
+
+</body>
+</html>
